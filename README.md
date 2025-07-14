@@ -1,50 +1,94 @@
-# Welcome to your Expo app 👋
+# 📋 React Native Todo App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A minimal and clean Todo application built using **React Native** (with Expo) and powered by **Convex** for real-time backend functionality.
 
-## Get started
+## 🚀 Features
 
-1. Install dependencies
+- ✅ Add, edit, and delete todos
+- 🔄 Real-time sync powered by [Convex](https://convex.dev)
+- 🧠 Persistent data (todos stay saved)
+- 📱 Works on Android (via APK build)
+- 💡 Simple, clean UI with smooth UX
+- 📦 Built with Expo and EAS Build
 
-   ```bash
-   npm install
-   ```
+## 📸 Preview
 
-2. Start the app
+![App Screenshot](./assets/screenshot1.jpg)
 
-   ```bash
-   npx expo start
-   ```
+## 📲 APK Download
 
-In the output, you'll find options to open the app in a
+You can install the app on your Android device using the link below:
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+👉 [Download APK from Expo](https://expo.dev/accounts/rahul-dubey/projects/daily-planner/builds/e9e02da7-38cb-4739-a97e-983f4eba41e8)
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## 🛠️ Tech Stack
 
-## Get a fresh project
+- **Frontend:** React Native (Expo)
+- **Backend:** Convex (Database + Functions)
+- **Build & Deployment:** EAS Build (APK)
 
-When you're ready, run:
+## 📁 Project Structure
+
+<pre> Todo-App/ ├── .expo/ ├── .git/ ├── .vscode/ ├── app/ # Entry point routes and screens ├── assets/ # Images, fonts, and app assets (e.g., screenshots) ├── components/ # Reusable UI components ├── convex/ # Convex backend logic ├── dist/ # Distribution files (optional) ├── hooks/ # Custom React hooks ├── node_modules/ ├── .env.local # Environment variables (not committed) ├── .gitignore ├── app.config.js # Expo app configuration ├── eas.json # EAS build configuration ├── eslint.config.js # Linting rules ├── expo-env.d.ts # Type declarations for Expo env vars ├── package-lock.json ├── package.json ├── README.md ├── tsconfig.json # TypeScript config </pre>
+
+
+
+## ⚙️ Setup Locally
 
 ```bash
-npm run reset-project
+# 1. Clone the repository
+git clone https://github.com/dubeyRahul26/Daily-Planner.git
+cd todo-app
+
+# 2. Install dependencies
+npm install
+
+# 3. Start the development server
+npx expo start
+
+# 4. (Optional) Run Convex backend locally
+npx convex dev
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
 
-## Learn more
+## 🌐 Environment Variables
 
-To learn more about developing your project with Expo, look at the following resources:
+Create a `.env.local` file in the root of the project and add the following:
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+```env
+EXPO_PUBLIC_CONVEX_URL=https://moonlit-albatross-446.convex.cloud
+```
 
-## Join the community
+👉 For **production builds**, make sure this URL points to your production Convex deployment.
 
-Join our community of developers creating universal apps.
+---
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+## 🔧 Build APK Locally (Optional)
+
+Make sure you’ve installed the EAS CLI globally:
+
+```bash
+npm install -g eas-cli
+```
+
+Then build the APK using the preview profile:
+
+```bash
+eas build -p android --profile preview
+```
+
+---
+
+## 🙋‍♂️ Author
+
+**Rahul Dubey**  
+[LinkedIn](https://www.linkedin.com/in/rahul-dubey-dev/) • [GitHub](https://github.com/dubeyRahul26/)
+
+Feel free to ⭐️ the repo if you find it helpful or want to follow along!
+
+---
+
+
+
+
+
