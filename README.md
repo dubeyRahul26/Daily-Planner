@@ -13,7 +13,7 @@ A minimal and clean Todo application built using **React Native** (with Expo) an
 
 ## 📸 Preview
 
-<img src="./assets/screenshot1.png" alt="Todo App Screenshot" width="300" />
+<img src="./assets/screenshot1.jpg" alt="Todo App Screenshot" width="300" />
 
 ## 📲 APK Download
 
